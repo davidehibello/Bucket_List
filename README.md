@@ -2,7 +2,7 @@
 
 A full-stack web application that allows users to create and manage their personal bucket list. Users can register, log in, and interact with bucket list items through features such as adding, editing, deleting, rating, and searching. Built with PHP, JavaScript, and MySQL, the app demonstrates core web development concepts including user authentication, CRUD operations, and form validation.
 
-## 🚀 Features
+## Features
 - User authentication (register, login, logout, password reset)
 - Create, view, edit, and delete bucket list items
 - Rate items with a star system
@@ -11,13 +11,13 @@ A full-stack web application that allows users to create and manage their person
 - Modal windows and JavaScript interactivity
 - Screenshots included for UI demonstration
 
-## 🛠 Tech Stack
+## Tech Stack
 - **Frontend:** HTML, CSS, JavaScript
 - **Backend:** PHP
 - **Database:** MySQL
 - **Other:** Basic form validation, session management
 
-## 📂 Project Structure
+## Project Structure
 - `index.php` – Homepage
 - `login.php` / `create-account.php` – User authentication
 - `list.php` – Display bucket list items
@@ -25,7 +25,7 @@ A full-stack web application that allows users to create and manage their person
 - `main.js` – Client-side interactions
 - `/screenshots` – Sample UI and validation screenshots
 
-## ⚙️ Setup Instructions
+## Setup Instructions
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/bucket-list-app.git
