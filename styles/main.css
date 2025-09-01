@@ -1,0 +1,552 @@
+:root{ /* General styling for all pages*/
+  font-family: 'Helvetica', sans-serif;
+  background-color: white; 
+  color: black;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main{ /*Styles the main in all pages*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+
+p{ /*Styles all paragraph tags in pages*/
+  font-size: 2em;
+}
+
+.split-layout { /* Style split layout container */
+  display: flex;
+}
+
+
+.left-half { /*styles the left half of the split*/
+  flex: 0.5; /* Adjust this value to change the size of the left half */
+  background-color: #e5e5e5; /* Optional background color for left half */
+}
+
+.right-half { /*styles the right half of the split*/
+  flex: 3; 
+  background-color: #f0f0f0; 
+  
+
+}
+
+.input-box{ /*Styles input boxes on pages */
+  width: 100%;
+  padding: 10px;
+  margin: 20px 0;
+  border: 1px solid #000000;
+  outline: none;
+  color: black;
+  font-size: 2em;
+  border-radius: 25px;
+
+}
+
+::placeholder{   /*setscolour of placeholder*/
+  color: black;
+  font-size: 1.5rem;
+}
+
+button[type=submit]{     /*styles the submit button*/
+  margin-top: 30px;
+  width: 100%;
+  background: grey;
+  padding: 10px;
+  border: 1px solid #000000 ;
+  outline: none;
+  font-size: 50px;
+  margin-top: 20px;
+  cursor: pointer;
+  align-items: center;
+  border-radius: 25px;
+  
+}
+
+button[type=submit]:hover{ /*styles submit button when hovered over*/
+  font-weight: 500;
+  background: #000;
+  color: #fff;
+}
+
+input[type=checkbox]{ /*styles the remember me checkbox*/
+  margin-top: 30px;
+  font-size: 16px;
+}
+
+#asty{ /*Styles "asty" in all pages*/
+  font-size: 5em; 
+}
+
+#join{ /*Styles "join" list in side bar */
+  font-size: 2em;
+  
+}
+
+
+#explore{ /*Styles "explore" in side bar */
+  font-size: 2em; /* */
+}
+
+#mylists{ /*Styles "mylist" in side bar */
+  font-size: 2em;
+}
+
+a { /*Styles the look of my links */
+  text-decoration: none; /* */
+  color: black; /* */
+}
+
+a:hover { /*Styles how links appear when hovered over */
+  color: gray;
+
+}
+
+ul.no-bullets {
+list-style-type: none; /* Remove bullet points from unordered lists with the "no-bullets" class */
+}
+
+li{   /*Styles list items in pages */
+  margin-top: 30px;
+  font-size: 1.5em;
+}
+
+label{   /*Styles the label in pages, so far mostly used for input related boxes */
+  font-style: italic;
+  font-size: 2em;
+}
+
+footer{ /*Styles the pages footer */
+  text-align: center;
+}
+
+.exp{ /*Styles the explore class in every page */
+  margin-top: 150px;
+}
+
+.joi{  /*Styles the join class in every page */
+  margin-top: 150px;
+}
+
+.account{ /*Styles the account class in every page */
+  margin-top: 150px;
+}
+
+.backtrack{  /*Styles the backtrack in pages */
+  margin-top: 150px;
+  font-size: 0.8em; 
+}
+
+.backtrack ul li{ /*displays the backtrack links on the same line*/
+  display: inline;
+}
+
+input.defaultcheckbox { /*Styles checkbox in  backtrack in pages */
+  width: 20px; 
+  height: 20px; 
+}
+
+
+
+
+
+/*CREATE ACCOUNT PAGE*/
+.ch-remember{ /*Styles remember me in create account page*/
+  font-size: 2em;
+}
+
+#create-account{ /*Styles "create account"t in create account page */
+  font-size: 5em;
+}
+
+
+
+
+
+
+
+/*ADD LIST PAGE */
+
+#create-list{  /*Styles "create list" in add list page */
+  font-size: 5em; /*Changes its font size */
+}
+
+textarea{  /*Styles the description box in add list page*/
+  width: 100%;
+  padding: 10px;
+  margin: 20px 0;
+  border: 1px solid #000000;
+  outline: none;
+  color: black;
+  font-size: 50px;
+  border-radius: 25px;
+  font-family: 'Helvetica', sans-serif;
+}
+
+#add-description{ /*Styles the fieldset for the select option in the add-list page*/
+  width: 100%;
+  padding: 10px;
+  margin: 20px 0;
+  border: 1px solid #000000;
+  outline: none;
+  color: black;
+}
+
+select{ /*Styles select tag */
+  padding: 10px;
+  margin: 20px 0;
+  border: 1px solid #000000;
+  outline: none;
+  color: black;
+  font-size: 2em;
+}
+
+
+
+
+
+
+
+/* LOGIN PAGE*/
+
+#login{ /*Styles "log in" in log in page */
+  font-size: 5em;
+}
+
+.f-password{ /*Styles "forgot password" in log in page */
+  text-decoration: underline;
+  text-decoration-color: blue;
+  color: blue;
+  font-size: 1em;
+}
+
+
+
+
+
+
+/* FORGOT PAGE */
+#Forgot-password{
+  font-size: 3em;
+}
+
+
+
+
+
+
+
+/* RESET PAGE */
+#new-password{
+  font-size: 3em;
+}
+
+
+
+
+
+
+/* INDEX PAGE */
+#bucket-list{ /*Styles the "Bucket lists" text */
+  font-size: 3em;
+  margin-top: 100px;
+}
+
+.summer-list p {
+   font-size: 1em;
+}
+
+#collegebl{ /*Styles the "college bucket list" text  */
+  margin-top: 150px;
+  margin-left: 10px;
+}
+
+#completedbl{ /*Styles the "Completed bucket list items" text  */
+  margin-top: 150px;
+}
+
+span{ /*styles the span*/
+  font-size: 1.5em;
+}
+
+p.summer-list{ /* */
+  font-size: 5em;
+}
+
+fieldset legend{ /*Styles the legend in my fieldset */
+  font-size: 2em;
+  font-style: italic;
+}
+
+fieldset{ /*Styles my fieldset */
+  border-radius: 0.6em;
+  padding: 1em;
+  margin-top: 50px;
+}
+
+.indexinput-box{ /*Styles the input box in the main page */
+  width: 30%;
+  padding: 10px;
+  margin: 20px 0;
+  border: 1px solid #000000;
+  outline: none;
+  color: black;
+  font-size: 1em;
+  border-radius: 25px;
+}
+
+textarea { /*Styles the size of my textbox*/
+  width: 100%; 
+  height: 200px; 
+  font-size: 2em;
+}
+
+button[type=reset]{     /*styles the submit button*/
+  margin-top: 30px;
+  width: 40%;
+  background: grey;
+  padding: 10px;
+  border: 1px solid #000000 ;
+  outline: none;
+  font-size: 50px;
+  margin-top: 20px;
+  cursor: pointer; 
+  border-radius: 25px;
+}
+
+button[type=reset]:hover{ /*styles submit button when hovered over*/
+  font-weight: 500;
+  background: #000;
+  color: #fff;
+}
+
+ul.custom-list li a { /*Styles links within the custom-list */
+  text-decoration: underline;
+  text-decoration-color: blue;
+}
+
+.college-addlist{ /*styles the add list item for college list */
+  width: 70%;
+}
+
+.summer-addlist{ /*styles the add list item for summer list */
+  width: 70%;
+}
+
+
+
+
+
+
+
+
+
+/* Public list*/
+.public-list p {
+  font-size: 1em;
+}
+
+
+
+
+
+
+
+/* Edit Item */
+input[type=File]{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 20%;
+  padding: 10px;
+  outline: none;
+  font-size: 20px;
+  cursor: pointer; 
+  background-color: grey;
+  border-radius: 25px;
+}
+
+#edit-entry{ /*Styles the "edit entry" text */
+  font-size: 3em;
+}
+
+.input-edit{ /*Styles the input boxes in the edit item page*/
+  width: 40%;
+  padding: 10px;
+  margin: 20px 0;
+  border: 1px solid #000000;
+  outline: none;
+  color: black;
+  font-size: 20px;
+  border-radius: 25px;
+}
+
+.radio-buttons{ /* Styles radio button items in edit page */
+  display: inline-block; 
+  margin: 0 20px;
+}
+
+.option-box{ /* Styles checkboxes in edit page */
+  display: inline-block; /* Display list items as inline-block elements */
+  margin: 0 20px;
+  font-size: 2em;
+}
+
+
+
+
+
+
+/* View Item */
+
+fieldset.stress {
+  width: 100%; /* Adjust the width as needed */
+  padding: 10px; /* Adjust the padding as needed to increase the height */
+  /* Additional styles if necessary */
+  margin-bottom: 80px;
+}
+
+.stress p {
+  font-size: 13px; /* Change the font size to your desired value */
+}
+
+.stress p::before {
+  content: attr(data-label); /* Use the content attribute to specify the text */
+  font-weight: bold; /* Add bold font weight to the label */
+  margin-right: 5px; /* Add space between the label and the text */
+}
+
+#go-summer{
+  margin-top: 20px;
+  font-size: 3em;
+}
+
+/* Specific to the custom-paragraph */
+p.custom-paragraph {
+  font-size: 1.5em; /* You can adjust the font size as needed */
+}
+
+.viewitemrating ul li{
+  display: inline;
+}
+
+.itemss {
+  display: flex; /* Use flexbox to make the list items display side by side */
+  justify-content: space-between; /* Add space between the fieldsets */
+}
+
+
+fieldset.stress{
+  width: 90%; /* Adjust the width as needed */
+  padding: 10px; /* Adjust the padding as needed to increase the height */
+  /* Additional styles if necessary */
+  margin-bottom: 80px;
+}
+
+.stress p {
+  font-size: 16px; /* Change the font size to your desired value */
+}
+
+.stress p::before {
+  content: attr(data-label); /* Use the content attribute to specify the text */
+  font-weight: bold; /* Add bold font weight to the label */
+  margin-right: 5px; /* Add space between the label and the text */
+}
+
+
+
+/* Search */
+button[type=button]:hover{ /*styles submit button when hovered over*/
+  font-weight: 500;
+  background: #000;
+  color: #fff;
+} 
+
+/* Style for the search bar */
+.search-box {
+  width: 100%; /* Adjust the width as needed */
+  padding: 30px;
+  font-size: 25px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Style for the search button */
+button[type="button"] {
+  padding: 30px 20px; /* Adjust padding to increase button size */
+  font-size: 18px;
+  background-color: grey;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Keep the search bar and button side by side */
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+}
+
+fieldset.shuffle { /* Style for the fieldset with the "shuffle" class to make it bigger */
+  width: 70%; /* Adjust the width as needed */
+  padding: 120px; /* Adjust the padding as needed to increase the height */
+  /* Additional styles if necessary */
+  margin-bottom: 80px;
+}
+
+.user-items ul {
+  list-style: none; /* Remove default list styles */
+  padding: 0; /* Remove padding */
+  display: flex; /* Display list items in a horizontal row */
+}
+
+.user-items li {
+  display: inline-block; /* Display list items as inline-block elements */
+  margin: 0 20px; /* Add spacing between list items */
+}
+
+.moreuser-items ul {
+  list-style: none; /* Remove default list styles */
+  padding: 0; /* Remove padding */
+  display: flex; /* Display list items in a horizontal row */
+}
+
+.moreuser-items li {
+  display: inline-block; /* Display list items as inline-block elements */
+  margin: 0 20px; /* Add spacing between list items */
+}
+
+.try {
+  display: flex; /* Use flexbox to make the list items display side by side */
+  justify-content: space-between; /* Add space between the fieldsets */
+}
+
+
+
+
+/*LOG OUT*/
+fieldset.logoutaccount { /* Style for the fieldset with the "shuffle" class to make it bigger */
+  width: 70%; /* Adjust the width as needed */
+  padding: 120px; /* Adjust the padding as needed to increase the height */
+  /* Additional styles if necessary */
+  margin-bottom: 80px;
+}
+
+.user-logout ul {
+  list-style: none; /* Remove default list styles */
+  padding: 0; /* Remove padding */
+  display: flex; /* Display list items in a horizontal row */
+}
+
+.user-logout li {
+  display: inline-block; /* Display list items as inline-block elements */
+  margin: 0 20px; /* Add spacing between list items */
+}
